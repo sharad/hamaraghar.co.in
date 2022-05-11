@@ -1,0 +1,73 @@
+| d!doctype html&gt;
+head
+  meta(charset='utf-8')
+  meta(http-equiv='x-ua-compatible', content='ie=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='canonical', href='https://html5-templates.com/')
+  title Bootstrap Template With Sticky Menu
+  meta(name='description', content='Simplified Bootstrap template with sticky menu')
+  link(href='css/bootstrap.min.css', rel='stylesheet')
+  link(href='css/sticky-menu.css', rel='stylesheet')
+nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+  .container
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+        span.sr-only Toggle menu
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.page-scroll(href='#page-top') Welcome
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      ul.nav.navbar-nav
+        li.hidden
+          a.page-scroll(href='#page-top')
+        li
+          a.page-scroll(href='#about') About
+        li
+          a.page-scroll(href='#whatwedo') What We Do
+        li
+          a.page-scroll(href='#contact') Contact
+    // .navbar-collapse
+  // .container
+// Welcome
+section#welcome.welcome-section
+  .container
+    .row
+      .col-lg-12
+        h1 Bootstrap Sticky Scrolling Menu
+        p
+          | Responsive one-page scrolling template with sticky menu on the top of the page. The active page gets highlighted as the user scrolls on the page or selects an option in the menu.
+        p
+          | A back to top arrow fades in as the user starts scrolling down the page which takes back to the welcome screen with one click.
+        p
+          | You can edit and publish this template but please leave a reference to 
+          a(href='https://html5-templates.com/', target='_blank', rel='nofollow') HTML5 Templates
+          | . Thank You!
+        p &nbsp;
+        a.btn.btn-primary.page-scroll(href='#about') Click To Scroll Down!
+// About
+section#about.about-section
+  .container
+    .row
+      .col-lg-12
+        h1 About
+// What we do Section
+section#whatwedo.whatwedo-section
+  .container
+    .row
+      .col-lg-12
+        h1 What We Do
+// Contact Section
+section#contact.contact-section
+  .container
+    .row
+      .col-lg-12
+        h1 Contact Section
+a#back2Top(title='Back to top', href='#') &#x27A4;
+// jQuery
+script(src='js/jquery.js')
+// Bootstrap Core JavaScript
+script(src='js/bootstrap.min.js')
+// Scrolling Nav JavaScript
+script(src='js/jquery.easing.min.js')
+script(src='js/sticky-menu.js')
